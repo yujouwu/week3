@@ -1,0 +1,101 @@
+/* banner */
+.banner{
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  @media (max-width: 992px){
+      background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true);
+  }
+  &-wrap{
+      padding-top: 296px;
+      padding-bottom: 296px;
+      text-align: right;
+      @media (max-width: 767px){
+          padding-top: 144px;
+          padding-bottom: 144px;
+      }
+  }
+  &-news{
+      font-size: 36px;
+      @media (max-width: 767px){
+          font-size: 16px;
+      }
+  }
+  &-slogan{
+      font-size: 64px;
+      font-weight: bold;
+      @media (max-width: 767px){
+          font-size: 24px;
+      }
+  }
+  &-btn{
+      font-size: 20px;
+      display: inline-block;
+      padding: 6px 12px;
+      margin-top: 4px;
+      @media (max-width: 992px){
+          margin-top: 10px;
+      }
+      @media (max-width: 767px){
+          margin-top: 8px;
+      }
+      &:hover{
+          background-color: $text-primary;
+          text-decoration: none;
+      }
+  }
+}
+
+// main
+.section{
+  &-pd{
+      padding-top: 80px;
+      padding-bottom: 80px;
+      @media (max-width: 767px){
+          padding-top: 40px;
+          padding-bottom: 40px;
+      }
+  }
+  &-header{
+      font-size: $fz-xl;
+      color: $text-primary;
+      font-weight: bold;
+      text-align: center;
+  }
+}
+
+.feature{
+  &-menu{
+      display: flex;
+      text-align: center;
+      flex-wrap: wrap;
+  }
+  &-item{
+      padding-right: 12px;
+      padding-left: 12px;
+      padding-top: 24px;
+      width: 25%;
+      @media (max-width: 992px){
+          
+          width: 50%;
+      }
+      @media (max-width: 767px){
+          width: 100%;
+      }
+  }
+  &-icon{
+      width: 100px;
+      margin-bottom: 16px;
+      display: inline-block;
+  }
+  h4{
+      font-size: $fz-lg;
+      color: $text-primary;
+      font-weight: bold;
+      margin-bottom: 8px;
+  }
+  p{
+      text-align: left;
+  }
+}
