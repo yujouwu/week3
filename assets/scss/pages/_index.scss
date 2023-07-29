@@ -1,12 +1,12 @@
 /* banner */
 .banner {
-    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true);
+    background-image: url(../../../assets/images/home-header.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
     @media (max-width: 992px) {
-        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true);
+        background-image: url(../../../assets/images/home-header-sm.png);
     }
 
     &-wrap {
@@ -69,42 +69,38 @@
             padding-bottom: 40px;
         }
     }
+    &-wrap{
+        padding-left: 0;
+        padding-right: 0;
+    }
     &-header {
         font-size: $fz-xl;
         color: $text-primary;
         font-weight: bold;
         text-align: center;
-        margin-left: 12px;
-        margin-right: 12px;
+        padding-left: 12px;
+        padding-right: 12px;
         @media (max-width: 767px){
             font-size: $fz-lg;
         }
     }
-}
-
-.feature {
-    &-wrap {
-        padding-left: 0;
-        padding-right: 0;
-    }
-
     &-menu {
         display: flex;
         text-align: center;
         flex-wrap: wrap;
     }
+}
 
+// feature
+.feature {
     &-item {
         padding-right: 12px;
         padding-left: 12px;
         padding-top: 24px;
         width: 25%;
-
         @media (max-width: 992px) {
-
             width: 50%;
         }
-
         @media (max-width: 767px) {
             width: 100%;
         }
@@ -125,5 +121,28 @@
 
     p {
         text-align: left;
+    }
+}
+.classic{
+    &-item {
+        padding-right: 12px;
+        padding-left: 12px;
+        padding-top: 48px;
+        width: 33.33%;
+        @media (max-width: 992px) {
+            width: 100%;
+        }
+    }
+    h4{
+        font-style: italic;
+        margin-top: 8px;
+    }
+    &-img{
+        @media (max-width: 992px){
+            max-width: 336px;
+        }
+        @media (max-width: 767px) {
+            max-width: 348px;
+        }
     }
 }
